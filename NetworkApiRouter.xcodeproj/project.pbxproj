@@ -17,6 +17,8 @@
 		2F4BAEE7278C719700E9CFD6 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4BAEE6278C719700E9CFD6 /* URLRequestConvertible.swift */; };
 		2F4BAEEC278C732F00E9CFD6 /* Encodable+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4BAEEB278C732F00E9CFD6 /* Encodable+extension.swift */; };
 		2F4BAEEE278C74C900E9CFD6 /* NetworkApiRouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4BAEED278C74C900E9CFD6 /* NetworkApiRouterError.swift */; };
+		2F4BAEF1278C7DB900E9CFD6 /* RouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4BAEEF278C7C7F00E9CFD6 /* RouterMock.swift */; };
+		2F609E3D278C9C480002CC9B /* NSNumber+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F609E3C278C9C480002CC9B /* NSNumber+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		2F4BAEE6278C719700E9CFD6 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
 		2F4BAEEB278C732F00E9CFD6 /* Encodable+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+extension.swift"; sourceTree = "<group>"; };
 		2F4BAEED278C74C900E9CFD6 /* NetworkApiRouterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApiRouterError.swift; sourceTree = "<group>"; };
+		2F4BAEEF278C7C7F00E9CFD6 /* RouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMock.swift; sourceTree = "<group>"; };
+		2F609E3C278C9C480002CC9B /* NSNumber+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNumber+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 		2F4BAED0278C6D9000E9CFD6 /* NetworkApiRouterTests */ = {
 			isa = PBXGroup;
 			children = (
+				2F4BAEEF278C7C7F00E9CFD6 /* RouterMock.swift */,
 				2F4BAED1278C6D9000E9CFD6 /* NetworkApiRouterTests.swift */,
 			);
 			path = NetworkApiRouterTests;
@@ -123,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				2F4BAEEB278C732F00E9CFD6 /* Encodable+extension.swift */,
+				2F609E3C278C9C480002CC9B /* NSNumber+extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -264,6 +270,7 @@
 				2F4BAEEE278C74C900E9CFD6 /* NetworkApiRouterError.swift in Sources */,
 				2F4BAEE7278C719700E9CFD6 /* URLRequestConvertible.swift in Sources */,
 				2F4BAEE3278C716600E9CFD6 /* AbstractRouter.swift in Sources */,
+				2F609E3D278C9C480002CC9B /* NSNumber+extension.swift in Sources */,
 				2F4BAEE5278C718700E9CFD6 /* URLConvertible.swift in Sources */,
 				2F4BAEEC278C732F00E9CFD6 /* Encodable+extension.swift in Sources */,
 			);
@@ -273,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F4BAEF1278C7DB900E9CFD6 /* RouterMock.swift in Sources */,
 				2F4BAED2278C6D9000E9CFD6 /* NetworkApiRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
