@@ -10,6 +10,13 @@
 		2F4BAECD278C6D9000E9CFD6 /* NetworkApiRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4BAEC4278C6D9000E9CFD6 /* NetworkApiRouter.framework */; };
 		2F4BAED2278C6D9000E9CFD6 /* NetworkApiRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4BAED1278C6D9000E9CFD6 /* NetworkApiRouterTests.swift */; };
 		2F4BAED3278C6D9000E9CFD6 /* NetworkApiRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F4BAEC7278C6D9000E9CFD6 /* NetworkApiRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F4BAEDF278C708B00E9CFD6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4BAEDE278C708B00E9CFD6 /* HTTPMethod.swift */; };
+		2F4BAEE1278C714000E9CFD6 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4BAEE0278C714000E9CFD6 /* HTTPHeaders.swift */; };
+		2F4BAEE3278C716600E9CFD6 /* AbstractRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4BAEE2278C716600E9CFD6 /* AbstractRouter.swift */; };
+		2F4BAEE5278C718700E9CFD6 /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4BAEE4278C718700E9CFD6 /* URLConvertible.swift */; };
+		2F4BAEE7278C719700E9CFD6 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4BAEE6278C719700E9CFD6 /* URLRequestConvertible.swift */; };
+		2F4BAEEC278C732F00E9CFD6 /* Encodable+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4BAEEB278C732F00E9CFD6 /* Encodable+extension.swift */; };
+		2F4BAEEE278C74C900E9CFD6 /* NetworkApiRouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4BAEED278C74C900E9CFD6 /* NetworkApiRouterError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +34,13 @@
 		2F4BAEC7278C6D9000E9CFD6 /* NetworkApiRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkApiRouter.h; sourceTree = "<group>"; };
 		2F4BAECC278C6D9000E9CFD6 /* NetworkApiRouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkApiRouterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4BAED1278C6D9000E9CFD6 /* NetworkApiRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApiRouterTests.swift; sourceTree = "<group>"; };
+		2F4BAEDE278C708B00E9CFD6 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		2F4BAEE0278C714000E9CFD6 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		2F4BAEE2278C716600E9CFD6 /* AbstractRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractRouter.swift; sourceTree = "<group>"; };
+		2F4BAEE4278C718700E9CFD6 /* URLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConvertible.swift; sourceTree = "<group>"; };
+		2F4BAEE6278C719700E9CFD6 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
+		2F4BAEEB278C732F00E9CFD6 /* Encodable+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+extension.swift"; sourceTree = "<group>"; };
+		2F4BAEED278C74C900E9CFD6 /* NetworkApiRouterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApiRouterError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +83,7 @@
 		2F4BAEC6278C6D9000E9CFD6 /* NetworkApiRouter */ = {
 			isa = PBXGroup;
 			children = (
+				2F4BAEDD278C706B00E9CFD6 /* Source */,
 				2F4BAEC7278C6D9000E9CFD6 /* NetworkApiRouter.h */,
 			);
 			path = NetworkApiRouter;
@@ -80,6 +95,36 @@
 				2F4BAED1278C6D9000E9CFD6 /* NetworkApiRouterTests.swift */,
 			);
 			path = NetworkApiRouterTests;
+			sourceTree = "<group>";
+		};
+		2F4BAEDD278C706B00E9CFD6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2F4BAEE9278C72F800E9CFD6 /* Core */,
+				2F4BAEEA278C72FE00E9CFD6 /* Extension */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2F4BAEE9278C72F800E9CFD6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2F4BAEED278C74C900E9CFD6 /* NetworkApiRouterError.swift */,
+				2F4BAEDE278C708B00E9CFD6 /* HTTPMethod.swift */,
+				2F4BAEE0278C714000E9CFD6 /* HTTPHeaders.swift */,
+				2F4BAEE4278C718700E9CFD6 /* URLConvertible.swift */,
+				2F4BAEE6278C719700E9CFD6 /* URLRequestConvertible.swift */,
+				2F4BAEE2278C716600E9CFD6 /* AbstractRouter.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2F4BAEEA278C72FE00E9CFD6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2F4BAEEB278C732F00E9CFD6 /* Encodable+extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +149,7 @@
 				2F4BAEC0278C6D9000E9CFD6 /* Sources */,
 				2F4BAEC1278C6D9000E9CFD6 /* Frameworks */,
 				2F4BAEC2278C6D9000E9CFD6 /* Resources */,
+				2F4BAEE8278C725A00E9CFD6 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -144,6 +190,7 @@
 				TargetAttributes = {
 					2F4BAEC3278C6D9000E9CFD6 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					2F4BAECB278C6D9000E9CFD6 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -186,11 +233,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F4BAEE8278C725A00E9CFD6 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F4BAEC0278C6D9000E9CFD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F4BAEE1278C714000E9CFD6 /* HTTPHeaders.swift in Sources */,
+				2F4BAEDF278C708B00E9CFD6 /* HTTPMethod.swift in Sources */,
+				2F4BAEEE278C74C900E9CFD6 /* NetworkApiRouterError.swift in Sources */,
+				2F4BAEE7278C719700E9CFD6 /* URLRequestConvertible.swift in Sources */,
+				2F4BAEE3278C716600E9CFD6 /* AbstractRouter.swift in Sources */,
+				2F4BAEE5278C718700E9CFD6 /* URLConvertible.swift in Sources */,
+				2F4BAEEC278C732F00E9CFD6 /* Encodable+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +413,7 @@
 		2F4BAED7278C6D9000E9CFD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -358,6 +434,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +443,7 @@
 		2F4BAED8278C6D9000E9CFD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -394,6 +472,7 @@
 		2F4BAEDA278C6D9000E9CFD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GHXPN8A4H7;
@@ -410,6 +489,7 @@
 		2F4BAEDB278C6D9000E9CFD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GHXPN8A4H7;
