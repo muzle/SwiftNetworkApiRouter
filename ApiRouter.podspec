@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ApiRouter'
-  s.version          = '0.0.1'
+  s.version          = '0.0.3'
   s.summary          = 'An easy way to control request routing'
   s.homepage         = 'https://github.com/muzle/SwiftNetworkApiRouter'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
